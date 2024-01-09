@@ -11,4 +11,5 @@ urlpatterns = [
     path('estaticos/',views.estaticos,name = 'estaticos'),
 
     path('herencia/',views.herencia,name='herencia'),
+    path('',views.index,name="index"),
 ]
