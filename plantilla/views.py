@@ -9,3 +9,5 @@ def dinamico(request,name):
 
 def estaticos(request):
     return render(request, 'estaticos.html',{})
+def herencia(request):
+    return render(request,'herencia.html',{});

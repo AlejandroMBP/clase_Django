@@ -7,6 +7,8 @@ urlpatterns = [
     path('simple/', views.simple, name='simple'),
     path('dinamico/<str:name>',views.dinamico, name='dinamico'),
  
- 
+
     path('estaticos/',views.estaticos,name = 'estaticos'),
+
+    path('herencia/',views.herencia,name='herencia'),
 ]
