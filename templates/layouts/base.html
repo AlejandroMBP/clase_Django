@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        {% block style %}{% endblock %}
+        <title>{% block title %}{% endblock  %}</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Herencia</a></li>
+                <li><a href="#">Dinamico</a></li>
+                <li><a href="#">Estatico</a></li>
+                <li><a href="#">Simple</a></li>
+            </ul>
+        </nav>
+        <main>
+            {% block content %}{% endblock  %}             
+        </main>
+        <footer>
+            <p>TODOS LOS DERECHOS RESERVADOS</p>
+        </footer>
+        {% block scripts %}{% endblock %}
+    </body>
+</html>
